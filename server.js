@@ -13,7 +13,7 @@ app.use("/api", APIRouter);
 //loads random products to the DB
 /*
 app.get("/load-products", (req, res) => {
-  for (let i = 0; i < 30; i++) {
+  for (let i = 31; i < 100; i++) {
     let rand = Math.random() * 10;
     rounded = Math.round(rand * 100) / 100;
 
@@ -33,7 +33,6 @@ app.get("/load-products", (req, res) => {
   res.send(`<h1>worked?</h1>`);
 });
 */
-
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
