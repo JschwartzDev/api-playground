@@ -29,7 +29,6 @@ const deleteProduct = (req, res) => {
     if (result.rowCount > 0) {
       pool.query(productQueries.deleteProduct, [id], (err, data) => {
         if (error) throw error;
-        console.log("was deleted");
       });
     }
   });
